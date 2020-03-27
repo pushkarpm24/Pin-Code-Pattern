@@ -1,12 +1,13 @@
 #!/bin/bash -x
 
-shopt -s extglob
-
 # Problem Statement -> Validate PIN number
 # Author -> Pushkar Morey
 # Date -> 26/03/2020
 
-PATTERN="^[1-9][0-9]{5}$"
+shopt -s extglob
+pinNumber=0
+
+PATTERN="^[1-9]{1}[0-9]{2}?(" ")[0-9]{3}$"
 
 read -p "Enter six digit pin number:" pinNumber
 
