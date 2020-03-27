@@ -6,7 +6,7 @@ shopt -s extglob
 # Author -> Pushkar Morey
 # Date -> 26/03/2020
 
-PATTERN="[0-9]{6}$"
+PATTERN="^[1-9][0-9]{5}$"
 
 read -p "Enter six digit pin number:" pinNumber
 
